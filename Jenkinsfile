@@ -5,7 +5,6 @@ pipeline {
         stage('Hello') {
             steps {
                 git 'https://github.com/gdnam/project7.git'
-                echo 'Hello World'
             }
         }
     stage('build code')
@@ -26,7 +25,7 @@ pipeline {
     {
         steps
         {
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'index.html', reportName: 'Pipeline', reportTitles: '', useWrapperFileDirectly: true])
         }
     }
     }
