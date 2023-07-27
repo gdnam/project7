@@ -25,7 +25,7 @@ pipeline {
     {
         steps
         {
-        publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'index.html', reportName: 'pipeline', reportTitles: '', useWrapperFileDirectly: true])
+        publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: '', reportFiles: 'index.html', reportName: 'Pipeline', reportTitles: '', useWrapperFileDirectly: true])
         }
     }
     }
